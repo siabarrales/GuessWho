@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="../css/game.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="loading">
+      <img class="rotate" src="../../img/portal.png" alt="" />
+    </div>
+    <div class="container" id="container" style="visibility: hidden;">
       <div id="game" class="justify-center flex-column">
         <div id="hud">
           <div class="hud-item">
@@ -21,7 +24,7 @@
               <div id="progressBarFull"></div>
             </div>
           </div>
-          <div class="hud-item">            
+          <div class="hud-item">
             <p class="hud-prefix">Score</p>
             <h1 class="hud-main-text" id="score">0</h1>
           </div>
@@ -32,22 +35,35 @@
         <h1 id="question">¿Who is it?</h1>
         <div class="choice-container">
           <p class="choice-prefix">A</p>
-          <p class="choice-text" data-number="1">Choice 1</p>
+          <p class="choice-text" data-number="1"></p>
         </div>
         <div class="choice-container">
           <p class="choice-prefix">B</p>
-          <p class="choice-text" data-number="2">Choice 2</p>
+          <p class="choice-text" data-number="2"></p>
         </div>
         <div class="choice-container">
           <p class="choice-prefix">C</p>
-          <p class="choice-text" data-number="3">Choice 3</p>
+          <p class="choice-text" data-number="3"></p>
         </div>
         <div class="choice-container">
           <p class="choice-prefix">D</p>
-          <p class="choice-text" data-number="4">Choice 4</p>
+          <p class="choice-text" data-number="4"></p>
         </div>
       </div>
     </div>
+    <script>
+      var flag = false;
+      window.onload = () => {
+        var loading = document.getElementById("loading");
+        var container = document.getElementById("container");
+
+        loading.style.visibility = "hidden";
+        loading.style.opacity = "0";
+        setTimeout(() => {
+          container.style.visibility = "visible"
+        }, 500);
+      };
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="../js/game.js"></script>
   </body>
