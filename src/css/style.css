@@ -29,6 +29,8 @@ h2 {
   position: fixed;
   transition: all 1s ease;
   z-index: 10000;
+  background:rgb(29,26,26);
+  background-size: cover;
 }
 
 #loading img {
@@ -60,7 +62,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
   padding: 2rem;
 }

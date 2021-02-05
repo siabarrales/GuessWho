@@ -161,7 +161,8 @@ async function fetchCharacters() {
         }).then((result) => {
           /* Read more about isConfirmed, isDenied below */
           if (result.isConfirmed) {
-            fetchCharacters();
+            window.location.reload();
+            //fetchCharacters();
           } else if (result.isDenied) {
             window.location.assign("../../index.html")
           }
