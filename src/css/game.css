@@ -1,0 +1,225 @@
+* {
+  font-family: "Bangers", cursive;
+}
+body {
+  background-image: url(../../img/fondo12.png);
+  background-size: cover;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background:rgb(29,26,26);
+  color: white;
+  font-size: 3rem;
+  min-width: 80rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 green;
+  transform: scale(1.02);
+  transition: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: white;
+}
+
+.choice-text {
+  padding: 2rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.correct {
+  background: linear-gradient(
+    32deg,
+    rgba(11, 223, 36),
+    0%,
+    rgb(41, 232, 111) 100%
+  );
+}
+
+.incorrect {
+  background: linear-gradient(
+    32deg,
+    rgba(230, 29, 29, 1),
+    0%,
+    rgb(224, 11, 11, 1) 100%
+  );
+}
+
+/*Heads up Display*/
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.hud-main-text {
+  text-align: center;
+  margin-right: 1rem;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.3rem solid rgb(11, 223, 36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(11, 223, 36);
+  width: 0%;
+}
+
+#question {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.container-character {
+  display: flex;
+  justify-content: center;
+}
+#character {
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
+}
+.swal2-popup {  
+  font-size: 2.8rem !important;
+  height: 30rem !important;
+  width: 55rem !important;
+}
+.format-pre pre{
+  color:white !important;
+  font-size: 2.2rem !important;
+}
+
+.format-pre pro{
+  color:white !important;
+  font-size: 3rem !important;
+}
+
+#score{
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+  #character {
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
+    max-width: 23rem;
+  }
+  .hud-prefix{
+    margin-top: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+  }
+  #question {
+    font-size: 3.3rem;
+    text-align: center;
+  }
+  #progressBar {
+    width: 18rem;
+    height: 3rem;
+    border: 0.4rem solid rgb(11, 223, 36);
+    margin-top: 0.5rem;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .choice-container {
+    min-width: 35rem;
+  }
+  #character {
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
+    max-width: 20rem;
+  }
+  .hud-prefix{
+    margin-top: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  #question {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  #progressBar {
+    width: 15rem;
+    height: 3rem;
+    border: 0.4rem solid rgb(11, 223, 36);
+    margin-top: 0.5rem;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .choice-container {
+    min-width: 30rem;
+    margin-bottom: 0.3rem;
+    height: 5.4rem;
+  }
+  #character {
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
+    max-width:18rem;
+  }
+  .hud-prefix{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  #question {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  #progressBar {
+    width: 15rem;
+    height: 3rem;
+    border: 0.4rem solid rgb(11, 223, 36);
+    margin-top: 0.5rem;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .choice-prefix {
+    padding: 1.4rem 2rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .choice-text{
+    font-size: 1.7rem;
+    padding: 1.3rem;
+  }
+}

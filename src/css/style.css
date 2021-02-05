@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Bangers", cursive;
+}
+body{
+  background-image: url('../../img/1.gif');
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: rgb(29, 26, 26);
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 6px rgba(83, 244, 8, 0.6);
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  background: linear-gradient(
+    90deg,
+    rgb(18, 92, 255) 0%,
+    rgb(0, 102, 255) 100%
+  );
+  border-radius: 4px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+  transition: 150ms;
+  transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .contenido {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  width: 50vw;
+}
+
+.contenido img {
+  margin-bottom: 100px;
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button {
+  cursor: pointer;
+  overflow: hidden;
+  padding: 20px;
+  border: solid 2px #ffff00;
+  background-color: #ffff00;
+  border-radius: 35px;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 5px;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-text-stroke: 0px white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contenido a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+}
+
+.button::after {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  box-shadow: 0px 5px 0px white, 0px 10px 0px white, 0px 15px 0px white,
+    0px 20px 0px white, 0px 25px 0px white, 0px 30px 0px white,
+    0px 35px 0px white, 0px 40px 0px white, 0px 45px 0px white,
+    0px 50px 0px white, 0px 55px 0px white;
+}
+.button:hover::after {
+  width: 160px;
+  z-index: -1;
+  -webkit-text-stroke: 4px white;
+  box-shadow: -10px 5px 0px white, -20px 10px 0px white, -30px 15px 0px white,
+    -40px 20px 0px white, -50px 25px 0px white, -60px 30px 0px white,
+    -70px 35px 0px white, -80px 40px 0px white, -90px 45px 0px white,
+    -100px 50px 0px white, -110px 55px 0px white;
+}
+.button:hover {
+  color: rgb(8, 8, 8);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 244, 106, 0.6);
+}
+figure{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  width: 80rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  h1{
+		font-size: 2.2rem;
+	}
+	figure{
+		display: flex;
+    justify-content: center;
+  }
+  .logo{
+    width: 55rem !important;
+  }
+  .button{
+    width: 18rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  h1{
+		font-size: 1.9rem;
+	}
+	figure{
+		display: flex;
+    justify-content: center;
+  }
+  .logo{
+    width: 37rem !important;
+  }
+  .button{
+    width: 18rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+	h1{
+		font-size: 1.7rem;
+	}
+	figure{
+		display: flex;
+    justify-content: center;
+  }
+  .logo{
+    width: 32rem !important;
+  }
+  .button{
+    width: 14rem;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+  }
+}

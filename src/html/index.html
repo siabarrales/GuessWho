@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick And Morty Trivia!</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="contenido">
+          <h1>Guess Who</h1>
+          <figure>
+            <img src="../../img/logo.png" alt="Logo" class="logo"/>
+          </figure>
+          <a class="noSelect" href="game.html">
+            <div class="button two noSelect">Start Game</div>
+          </a>
+          <!--
+          <a class="noSelect" href="/highscores.html">
+            <div id="highscore-btn" class="button two noSelect">High Scores</div>
+          </a>
+          -->
+        </div>
+      </div>
+    </header>
+    <script>
+        let vid = document.getElementById("video");
+
+        function playVid() {
+          vid.play();
+        }
+
+        playVid();
+    </script>
+  </body>
+</html>
