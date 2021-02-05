@@ -130,6 +130,7 @@ body {
     margin-bottom: 1rem;
     box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
     max-width: 23rem;
+    max-height: 23rem;
   }
   .hud-prefix{
     margin-top: 2rem;
@@ -160,7 +161,8 @@ body {
     margin-top: 0.3rem;
     margin-bottom: 1rem;
     box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
-    max-width: 10rem;
+    max-width: 20rem;
+    max-height: 20rem;
   }
   .hud-prefix{
     margin-top: 2rem;
@@ -193,7 +195,8 @@ body {
     margin-top: 0.3rem;
     margin-bottom: 1rem;
     box-shadow: 0 1rem 1.4rem 0 rgb(29, 26, 26);
-    max-width: 10rem;
+    max-width: 15rem;
+    max-height: 15rem;
   }
   .hud-prefix{
     margin-top: 2rem;
@@ -222,3 +225,4 @@ body {
     padding: 1.3rem;
   }
 }
+
