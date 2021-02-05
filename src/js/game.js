@@ -163,7 +163,7 @@ async function fetchCharacters() {
           if (result.isConfirmed) {
             fetchCharacters();
           } else if (result.isDenied) {
-            window.location.assign("../html/index.html")
+            window.location.assign("../../index.html")
           }
         });
       }
